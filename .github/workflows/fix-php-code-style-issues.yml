@@ -6,6 +6,9 @@ on: [push]
 #    paths:
 #      - '**.php'
 
+permissions:
+  actions: read|write
+
 jobs:
   php-code-styling:
     runs-on: ubuntu-latest
@@ -23,3 +26,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Fix styling
+          token: ${{ secrets.STYLE_RUNNER }}
