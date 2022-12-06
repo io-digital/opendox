@@ -1,9 +1,9 @@
 <?php
 
-namespace Noitran\Opendox\Tests;
+namespace IoDigital\Opendox\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Noitran\Opendox\ServiceProvider;
+use IoDigital\Opendox\ServiceProvider;
 
 /**
  * Class TestCase

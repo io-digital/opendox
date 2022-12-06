@@ -1,6 +1,6 @@
 <?php
 
-namespace Noitran\Opendox\Http\Controllers;
+namespace IoDigital\Opendox\Http\Controllers;
 
 use Illuminate\View\View;
 use Illuminate\Routing\Controller;
