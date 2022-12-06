@@ -1,6 +1,6 @@
 {
     "name": "io-digital/opendox",
-    "description": "OpenApi(Swagger) 3.0 package for Lumen 5.5+ and Laravel 5.5+ with REDOC UI and SwaggerUI 3",
+    "description": "OpenApi(Swagger) 3.0 package for Laravel 9 with REDOC UI and SwaggerUI 3",
     "authors": [
         {
             "name": "Noitran.Black",
