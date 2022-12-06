@@ -1,9 +1,10 @@
 name: Fix PHP code style issues
 
-on:
-  push:
-    paths:
-      - '**.php'
+on: [push]
+#on:
+#  push:
+#    paths:
+#      - '**.php'
 
 jobs:
   php-code-styling:
