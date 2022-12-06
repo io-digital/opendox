@@ -1,10 +1,9 @@
 name: Fix PHP code style issues
 
-on: [push]
-#on:
-#  push:
-#    paths:
-#      - '**.php'
+on:
+  push:
+    paths:
+      - '**.php'
 
 permissions: read-all|write-all
 
