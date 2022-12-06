@@ -24,7 +24,7 @@ class FullPackageTest extends TestCase
     {
         $source = $this->getStubDirectory() . '/' . $fileName;
         $dest = base_path($fileName);
-        
+
         copy($source, $dest);
     }
 

@@ -36,7 +36,7 @@ class ServiceProvider extends IlluminateServiceProvider
         }
         $this->publishes([$configPath => $publishPath], 'config');
 
-        $this->app->router->group(['namespace' => 'IoDigital\Opendox'], function ($router): void {
+        $this->app->router->group(['namespace' => 'IoDigital\Opendox'], function (): void {
             require __DIR__ . '/routes/routes.php';
         });
     }
