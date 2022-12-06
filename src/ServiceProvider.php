@@ -1,9 +1,9 @@
 <?php
 
-namespace Noitran\Opendox;
+namespace IoDigital\Opendox;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use Noitran\Opendox\Console\TransformDocsCommand;
+use IoDigital\Opendox\Console\TransformDocsCommand;
 
 /**
  * Class ServiceProvider
@@ -36,7 +36,7 @@ class ServiceProvider extends IlluminateServiceProvider
         }
         $this->publishes([$configPath => $publishPath], 'config');
 
-        $this->app->router->group(['namespace' => 'Noitran\Opendox'], function ($router): void {
+        $this->app->router->group(['namespace' => 'IoDigital\Opendox'], function ($router): void {
             require __DIR__ . '/routes/routes.php';
         });
     }

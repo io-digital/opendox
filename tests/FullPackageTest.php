@@ -1,6 +1,6 @@
 <?php
 
-namespace Noitran\Opendox\Tests;
+namespace IoDigital\Opendox\Tests;
 
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 use Illuminate\Support\Facades\Artisan;
@@ -24,6 +24,7 @@ class FullPackageTest extends TestCase
     {
         $source = $this->getStubDirectory() . '/' . $fileName;
         $dest = base_path($fileName);
+
         copy($source, $dest);
     }
 
@@ -68,7 +69,7 @@ class FullPackageTest extends TestCase
 
         $response = $this->app->handle(SymfonyRequest::create('/api/documentation', 'GET'));
 
-        $this->assertContains('http://localhost/api-docs/api-docs.json', $response->getContent());
+        $this->assertStringContainsString('http://localhost/api-docs/api-docs.json', $response->getContent());
     }
 
     /**
@@ -82,6 +83,6 @@ class FullPackageTest extends TestCase
 
         $response = $this->app->handle(SymfonyRequest::create('/api/console', 'GET'));
 
-        $this->assertContains('<div id="swagger-ui"></div>', $response->getContent());
+        $this->assertStringContainsString('<div id="swagger-ui"></div>', $response->getContent());
     }
 }

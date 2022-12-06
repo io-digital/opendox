@@ -1,6 +1,6 @@
 <?php
 
-namespace Noitran\Opendox\Console;
+namespace IoDigital\Opendox\Console;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Yaml\Yaml;

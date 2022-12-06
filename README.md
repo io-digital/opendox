@@ -2,11 +2,9 @@ Opendox - OpenAPI 3.0 (Swagger 3) package for Lumen and Laravel
 ====================
 
 <p align="center">
-<a href="https://scrutinizer-ci.com/g/noitran/opendox/code-structure"><img src="https://img.shields.io/scrutinizer/coverage/g/noitran/opendox.svg?style=flat-square" alt="Coverage Status"></img></a>
-<a href="https://scrutinizer-ci.com/g/noitran/opendox"><img src="https://img.shields.io/scrutinizer/g/noitran/opendox.svg?style=flat-square" alt="Quality Score"></img></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></img></a>
-<a href="https://github.com/noitran/opendox/releases"><img src="https://img.shields.io/github/release/noitran/opendox.svg?style=flat-square" alt="Latest Version"></img></a>
-<a href="https://packagist.org/packages/iocaste/opendox"><img src="https://img.shields.io/packagist/dt/iocaste/opendox.svg?style=flat-square" alt="Total Downloads"></img></a>
+<a href="https://github.com/io-digital/opendox/releases"><img src="https://img.shields.io/github/release/io-digital/opendox.svg?style=flat-square" alt="Latest Version"></img></a>
+<a href="https://packagist.org/packages/io-digital/opendox"><img src="https://img.shields.io/packagist/dt/io-digital/opendox.svg?style=flat-square" alt="Total Downloads"></img></a>
 </p>
 
 ## About
@@ -27,7 +25,7 @@ Also package adds route for raw json documentation output, so this package can b
 * Install as composer package
 
 ```bash
-$ composer require noitran/opendox
+$ composer require io-digital/opendox
 ```
 
 #### Laravel
@@ -35,7 +33,7 @@ $ composer require noitran/opendox
 * Laravel uses provider auto discovery. Config file can be published using command
 
 ```
-$ php artisan vendor:publish --provider="Noitran\Opendox\ServiceProvider"
+$ php artisan vendor:publish --provider="IoDigital\Opendox\ServiceProvider"
 ```
 
 #### Lumen
@@ -43,7 +41,7 @@ $ php artisan vendor:publish --provider="Noitran\Opendox\ServiceProvider"
 * Open your bootstrap/app.php and register as service provider
 
 ```php
-$app->register(Noitran\Opendox\ServiceProvider::class);
+$app->register(IoDigital\Opendox\ServiceProvider::class);
 ```
 
 * Config file should be loaded manually in bootstrap/app.php
